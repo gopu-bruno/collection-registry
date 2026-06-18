@@ -1,0 +1,21 @@
+{
+  "ns": "aws",
+  "name": "s3-api",
+  "title": "AWS S3 API",
+  "tagline": "Buckets, objects and multipart uploads.",
+  "category": "storage",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#ff9900",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "aws-s3-api",
+    "ref": "main"
+  }
+}
