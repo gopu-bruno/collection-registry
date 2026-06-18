@@ -1,0 +1,21 @@
+{
+  "ns": "vercel",
+  "name": "vercel-api",
+  "title": "Vercel API",
+  "tagline": "Deployments, domains and env vars — Vercel REST.",
+  "category": "devops",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#000000",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "vercel-vercel-api",
+    "ref": "main"
+  }
+}
