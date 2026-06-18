@@ -1,0 +1,21 @@
+{
+  "ns": "supabase",
+  "name": "supabase-rest",
+  "title": "Supabase REST",
+  "tagline": "Auto-generated REST from your Postgres schema.",
+  "category": "data",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#3ecf8e",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "supabase-supabase-rest",
+    "ref": "main"
+  }
+}
