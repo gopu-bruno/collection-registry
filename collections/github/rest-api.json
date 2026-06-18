@@ -2,21 +2,20 @@
   "ns": "github",
   "name": "rest-api",
   "title": "GitHub REST API",
-  "tagline": "Full GitHub REST API v2022-11-28, 600+ requests with examples.",
+  "tagline": "Core endpoints of the GitHub REST API.",
   "category": "devops",
-  "verified": true,
-  "official": true,
+  "verified": false,
+  "official": false,
   "featured": true,
   "trending": false,
   "langs": [
-    "REST",
-    "GraphQL"
+    "REST"
   ],
   "color": "#24292e",
   "source": {
     "type": "git",
-    "repo": "https://github.com/github/rest-api-description",
-    "subdir": ".",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "github-rest-api",
     "ref": "main"
   }
 }

@@ -10,10 +10,15 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
+// Each entry's source points at a real Bruno collection (opencollection.yml +
+// .yml requests) hosted in the bruno-collections repo under its own subdir.
+// Community-authored, so verified/official are false.
+const HOST_REPO = 'https://github.com/gopu-bruno/bruno-collections';
+
 const COLLECTIONS = [
-  { ns: 'stripe', name: 'stripe-api', title: 'Stripe API', tagline: 'Official Stripe REST API collection — payments, customers, webhooks.', category: 'payments', featured: true, trending: false, verified: true, official: true, langs: ['REST', 'Webhooks'], color: '#635bff', repo: 'https://github.com/stripe/openapi' },
-  { ns: 'github', name: 'rest-api', title: 'GitHub REST API', tagline: 'Full GitHub REST API v2022-11-28, 600+ requests with examples.', category: 'devops', featured: true, trending: false, verified: true, official: true, langs: ['REST', 'GraphQL'], color: '#24292e', repo: 'https://github.com/github/rest-api-description' },
-  { ns: 'openai', name: 'openai-api', title: 'OpenAI API', tagline: 'Chat, embeddings, audio, images — the complete OpenAI API surface.', category: 'ai', featured: true, trending: false, verified: true, official: true, langs: ['REST', 'Streaming'], color: '#10a37f', repo: 'https://github.com/openai/openai-openapi' },
+  { ns: 'stripe', name: 'stripe-api', title: 'Stripe API', tagline: 'Payments, customers and webhooks for the Stripe REST API.', category: 'payments', featured: true, trending: false, langs: ['REST'], color: '#635bff' },
+  { ns: 'github', name: 'rest-api', title: 'GitHub REST API', tagline: 'Core endpoints of the GitHub REST API.', category: 'devops', featured: true, trending: false, langs: ['REST'], color: '#24292e' },
+  { ns: 'openai', name: 'openai-api', title: 'OpenAI API', tagline: 'Chat completions and models for the OpenAI API.', category: 'ai', featured: true, trending: false, langs: ['REST'], color: '#10a37f' },
 ];
 
 const entryFor = (c) => ({
@@ -22,13 +27,13 @@ const entryFor = (c) => ({
   title: c.title,
   tagline: c.tagline,
   category: c.category,
-  verified: c.verified,
-  official: c.official,
+  verified: false,
+  official: false,
   featured: c.featured,
   trending: c.trending,
   langs: c.langs,
   color: c.color,
-  source: { type: 'git', repo: c.repo, subdir: '.', ref: 'main' }
+  source: { type: 'git', repo: HOST_REPO, subdir: `${c.ns}-${c.name}`, ref: 'main' }
 });
 
 const run = async () => {

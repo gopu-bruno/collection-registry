@@ -2,21 +2,20 @@
   "ns": "openai",
   "name": "openai-api",
   "title": "OpenAI API",
-  "tagline": "Chat, embeddings, audio, images — the complete OpenAI API surface.",
+  "tagline": "Chat completions and models for the OpenAI API.",
   "category": "ai",
-  "verified": true,
-  "official": true,
+  "verified": false,
+  "official": false,
   "featured": true,
   "trending": false,
   "langs": [
-    "REST",
-    "Streaming"
+    "REST"
   ],
   "color": "#10a37f",
   "source": {
     "type": "git",
-    "repo": "https://github.com/openai/openai-openapi",
-    "subdir": ".",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "openai-openai-api",
     "ref": "main"
   }
 }

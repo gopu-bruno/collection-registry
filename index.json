@@ -4,21 +4,20 @@
       "ns": "github",
       "name": "rest-api",
       "title": "GitHub REST API",
-      "tagline": "Full GitHub REST API v2022-11-28, 600+ requests with examples.",
+      "tagline": "Core endpoints of the GitHub REST API.",
       "category": "devops",
-      "verified": true,
-      "official": true,
+      "verified": false,
+      "official": false,
       "featured": true,
       "trending": false,
       "langs": [
-        "REST",
-        "GraphQL"
+        "REST"
       ],
       "color": "#24292e",
       "source": {
         "type": "git",
-        "repo": "https://github.com/github/rest-api-description",
-        "subdir": ".",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "github-rest-api",
         "ref": "main"
       }
     },
@@ -26,21 +25,20 @@
       "ns": "openai",
       "name": "openai-api",
       "title": "OpenAI API",
-      "tagline": "Chat, embeddings, audio, images — the complete OpenAI API surface.",
+      "tagline": "Chat completions and models for the OpenAI API.",
       "category": "ai",
-      "verified": true,
-      "official": true,
+      "verified": false,
+      "official": false,
       "featured": true,
       "trending": false,
       "langs": [
-        "REST",
-        "Streaming"
+        "REST"
       ],
       "color": "#10a37f",
       "source": {
         "type": "git",
-        "repo": "https://github.com/openai/openai-openapi",
-        "subdir": ".",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "openai-openai-api",
         "ref": "main"
       }
     },
@@ -48,21 +46,20 @@
       "ns": "stripe",
       "name": "stripe-api",
       "title": "Stripe API",
-      "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
+      "tagline": "Payments, customers and webhooks for the Stripe REST API.",
       "category": "payments",
-      "verified": true,
-      "official": true,
+      "verified": false,
+      "official": false,
       "featured": true,
       "trending": false,
       "langs": [
-        "REST",
-        "Webhooks"
+        "REST"
       ],
       "color": "#635bff",
       "source": {
         "type": "git",
-        "repo": "https://github.com/stripe/openapi",
-        "subdir": ".",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "stripe-stripe-api",
         "ref": "main"
       }
     }
@@ -74,19 +71,18 @@
       "title": "Claude Messages API",
       "tagline": "Anthropic Messages API with tool use and prompt caching.",
       "category": "ai",
-      "verified": true,
-      "official": true,
+      "verified": false,
+      "official": false,
       "featured": false,
       "trending": true,
       "langs": [
-        "REST",
-        "Streaming"
+        "REST"
       ],
       "color": "#d97757",
       "source": {
         "type": "git",
-        "repo": "https://github.com/anthropics/anthropic-sdk-typescript",
-        "subdir": ".",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "anthropic-claude-api",
         "ref": "main"
       }
     }
@@ -118,19 +114,18 @@
       "title": "Claude Messages API",
       "tagline": "Anthropic Messages API with tool use and prompt caching.",
       "category": "ai",
-      "verified": true,
-      "official": true,
+      "verified": false,
+      "official": false,
       "featured": false,
       "trending": true,
       "langs": [
-        "REST",
-        "Streaming"
+        "REST"
       ],
       "color": "#d97757",
       "source": {
         "type": "git",
-        "repo": "https://github.com/anthropics/anthropic-sdk-typescript",
-        "subdir": ".",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "anthropic-claude-api",
         "ref": "main"
       }
     },
@@ -138,21 +133,20 @@
       "ns": "github",
       "name": "rest-api",
       "title": "GitHub REST API",
-      "tagline": "Full GitHub REST API v2022-11-28, 600+ requests with examples.",
+      "tagline": "Core endpoints of the GitHub REST API.",
       "category": "devops",
-      "verified": true,
-      "official": true,
+      "verified": false,
+      "official": false,
       "featured": true,
       "trending": false,
       "langs": [
-        "REST",
-        "GraphQL"
+        "REST"
       ],
       "color": "#24292e",
       "source": {
         "type": "git",
-        "repo": "https://github.com/github/rest-api-description",
-        "subdir": ".",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "github-rest-api",
         "ref": "main"
       }
     },
@@ -160,21 +154,20 @@
       "ns": "openai",
       "name": "openai-api",
       "title": "OpenAI API",
-      "tagline": "Chat, embeddings, audio, images — the complete OpenAI API surface.",
+      "tagline": "Chat completions and models for the OpenAI API.",
       "category": "ai",
-      "verified": true,
-      "official": true,
+      "verified": false,
+      "official": false,
       "featured": true,
       "trending": false,
       "langs": [
-        "REST",
-        "Streaming"
+        "REST"
       ],
       "color": "#10a37f",
       "source": {
         "type": "git",
-        "repo": "https://github.com/openai/openai-openapi",
-        "subdir": ".",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "openai-openai-api",
         "ref": "main"
       }
     },
@@ -182,21 +175,20 @@
       "ns": "stripe",
       "name": "stripe-api",
       "title": "Stripe API",
-      "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
+      "tagline": "Payments, customers and webhooks for the Stripe REST API.",
       "category": "payments",
-      "verified": true,
-      "official": true,
+      "verified": false,
+      "official": false,
       "featured": true,
       "trending": false,
       "langs": [
-        "REST",
-        "Webhooks"
+        "REST"
       ],
       "color": "#635bff",
       "source": {
         "type": "git",
-        "repo": "https://github.com/stripe/openapi",
-        "subdir": ".",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "stripe-stripe-api",
         "ref": "main"
       }
     }
