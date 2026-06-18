@@ -1,0 +1,21 @@
+{
+  "ns": "clerk",
+  "name": "backend-api",
+  "title": "Clerk Backend API",
+  "tagline": "Sessions, users and organizations.",
+  "category": "auth",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#6c47ff",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "clerk-backend-api",
+    "ref": "main"
+  }
+}
