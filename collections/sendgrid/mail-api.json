@@ -1,0 +1,21 @@
+{
+  "ns": "sendgrid",
+  "name": "mail-api",
+  "title": "SendGrid Mail API",
+  "tagline": "Transactional and marketing email send.",
+  "category": "comms",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#1a82e2",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "sendgrid-mail-api",
+    "ref": "main"
+  }
+}
