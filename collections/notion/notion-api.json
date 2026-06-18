@@ -1,0 +1,21 @@
+{
+  "ns": "notion",
+  "name": "notion-api",
+  "title": "Notion API",
+  "tagline": "Pages, databases, blocks and comments.",
+  "category": "productivity",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#000000",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "notion-notion-api",
+    "ref": "main"
+  }
+}
