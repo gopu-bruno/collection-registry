@@ -8,11 +8,6 @@
   "official": true,
   "featured": true,
   "trending": false,
-  "downloads": 301842,
-  "stars": 2287,
-  "requests": 612,
-  "version": "2022.11.28",
-  "updated": "1w ago",
   "langs": [
     "REST",
     "GraphQL"

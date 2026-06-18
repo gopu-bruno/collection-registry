@@ -8,11 +8,6 @@
   "official": true,
   "featured": true,
   "trending": false,
-  "downloads": 228109,
-  "stars": 1984,
-  "requests": 64,
-  "version": "1.40.2",
-  "updated": "3d ago",
   "langs": [
     "REST",
     "Streaming"

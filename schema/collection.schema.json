@@ -3,7 +3,7 @@
   "title": "Registry collection entry",
   "description": "One file per collection under collections/<ns>/<name>.json. A pointer to a git-hosted Bruno/OpenCollection, plus display metadata.",
   "type": "object",
-  "required": ["ns", "name", "title", "tagline", "category", "version", "source"],
+  "required": ["ns", "name", "title", "tagline", "category", "source"],
   "additionalProperties": true,
   "properties": {
     "ns": { "type": "string", "description": "Namespace / publisher (owner).", "pattern": "^[a-z0-9-]+$" },
@@ -18,11 +18,6 @@
     "official": { "type": "boolean" },
     "featured": { "type": "boolean" },
     "trending": { "type": "boolean" },
-    "downloads": { "type": "integer", "minimum": 0 },
-    "stars": { "type": "integer", "minimum": 0 },
-    "requests": { "type": "integer", "minimum": 0 },
-    "version": { "type": "string" },
-    "updated": { "type": "string" },
     "langs": { "type": "array", "items": { "type": "string" } },
     "color": { "type": "string" },
     "source": {

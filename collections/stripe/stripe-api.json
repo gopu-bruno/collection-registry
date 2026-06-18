@@ -8,11 +8,6 @@
   "official": true,
   "featured": true,
   "trending": false,
-  "downloads": 482310,
-  "stars": 3120,
-  "requests": 412,
-  "version": "2025.08.12",
-  "updated": "2d ago",
   "langs": [
     "REST",
     "Webhooks"

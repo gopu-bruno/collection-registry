@@ -1,33 +1,6 @@
 {
   "featured": [
     {
-      "ns": "stripe",
-      "name": "stripe-api",
-      "title": "Stripe API",
-      "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
-      "category": "payments",
-      "verified": true,
-      "official": true,
-      "featured": true,
-      "trending": false,
-      "downloads": 482310,
-      "stars": 3120,
-      "requests": 412,
-      "version": "2025.08.12",
-      "updated": "2d ago",
-      "langs": [
-        "REST",
-        "Webhooks"
-      ],
-      "color": "#635bff",
-      "source": {
-        "type": "git",
-        "repo": "https://github.com/stripe/openapi",
-        "subdir": ".",
-        "ref": "main"
-      }
-    },
-    {
       "ns": "github",
       "name": "rest-api",
       "title": "GitHub REST API",
@@ -37,11 +10,6 @@
       "official": true,
       "featured": true,
       "trending": false,
-      "downloads": 301842,
-      "stars": 2287,
-      "requests": 612,
-      "version": "2022.11.28",
-      "updated": "1w ago",
       "langs": [
         "REST",
         "GraphQL"
@@ -64,11 +32,6 @@
       "official": true,
       "featured": true,
       "trending": false,
-      "downloads": 228109,
-      "stars": 1984,
-      "requests": 64,
-      "version": "1.40.2",
-      "updated": "3d ago",
       "langs": [
         "REST",
         "Streaming"
@@ -77,6 +40,28 @@
       "source": {
         "type": "git",
         "repo": "https://github.com/openai/openai-openapi",
+        "subdir": ".",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "stripe",
+      "name": "stripe-api",
+      "title": "Stripe API",
+      "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
+      "category": "payments",
+      "verified": true,
+      "official": true,
+      "featured": true,
+      "trending": false,
+      "langs": [
+        "REST",
+        "Webhooks"
+      ],
+      "color": "#635bff",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/stripe/openapi",
         "subdir": ".",
         "ref": "main"
       }
@@ -93,11 +78,6 @@
       "official": true,
       "featured": false,
       "trending": true,
-      "downloads": 118203,
-      "stars": 1442,
-      "requests": 28,
-      "version": "2026.02",
-      "updated": "4d ago",
       "langs": [
         "REST",
         "Streaming"
@@ -133,28 +113,23 @@
   ],
   "all": [
     {
-      "ns": "stripe",
-      "name": "stripe-api",
-      "title": "Stripe API",
-      "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
-      "category": "payments",
+      "ns": "anthropic",
+      "name": "claude-api",
+      "title": "Claude Messages API",
+      "tagline": "Anthropic Messages API with tool use and prompt caching.",
+      "category": "ai",
       "verified": true,
       "official": true,
-      "featured": true,
-      "trending": false,
-      "downloads": 482310,
-      "stars": 3120,
-      "requests": 412,
-      "version": "2025.08.12",
-      "updated": "2d ago",
+      "featured": false,
+      "trending": true,
       "langs": [
         "REST",
-        "Webhooks"
+        "Streaming"
       ],
-      "color": "#635bff",
+      "color": "#d97757",
       "source": {
         "type": "git",
-        "repo": "https://github.com/stripe/openapi",
+        "repo": "https://github.com/anthropics/anthropic-sdk-typescript",
         "subdir": ".",
         "ref": "main"
       }
@@ -169,11 +144,6 @@
       "official": true,
       "featured": true,
       "trending": false,
-      "downloads": 301842,
-      "stars": 2287,
-      "requests": 612,
-      "version": "2022.11.28",
-      "updated": "1w ago",
       "langs": [
         "REST",
         "GraphQL"
@@ -196,11 +166,6 @@
       "official": true,
       "featured": true,
       "trending": false,
-      "downloads": 228109,
-      "stars": 1984,
-      "requests": 64,
-      "version": "1.40.2",
-      "updated": "3d ago",
       "langs": [
         "REST",
         "Streaming"
@@ -214,34 +179,28 @@
       }
     },
     {
-      "ns": "anthropic",
-      "name": "claude-api",
-      "title": "Claude Messages API",
-      "tagline": "Anthropic Messages API with tool use and prompt caching.",
-      "category": "ai",
+      "ns": "stripe",
+      "name": "stripe-api",
+      "title": "Stripe API",
+      "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
+      "category": "payments",
       "verified": true,
       "official": true,
-      "featured": false,
-      "trending": true,
-      "downloads": 118203,
-      "stars": 1442,
-      "requests": 28,
-      "version": "2026.02",
-      "updated": "4d ago",
+      "featured": true,
+      "trending": false,
       "langs": [
         "REST",
-        "Streaming"
+        "Webhooks"
       ],
-      "color": "#d97757",
+      "color": "#635bff",
       "source": {
         "type": "git",
-        "repo": "https://github.com/anthropics/anthropic-sdk-typescript",
+        "repo": "https://github.com/stripe/openapi",
         "subdir": ".",
         "ref": "main"
       }
     }
   ],
   "totalCollections": 4,
-  "publishers": 4,
-  "monthlyInstalls": "1.1M"
+  "publishers": 4
 }

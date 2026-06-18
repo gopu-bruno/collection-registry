@@ -15,11 +15,6 @@ Publishing to the registry is a pull request. No account, no server — GitHub i
   "official": true,
   "featured": false,
   "trending": true,
-  "downloads": 118203,
-  "stars": 1442,
-  "requests": 28,
-  "version": "2026.02",
-  "updated": "4d ago",
   "langs": ["REST", "Streaming"],
   "color": "#d97757",
   "source": {
@@ -31,8 +26,8 @@ Publishing to the registry is a pull request. No account, no server — GitHub i
 }
 ```
 
-2. Required fields: `ns`, `name`, `title`, `tagline`, `category`, `version`, `source`. Valid categories: `payments`, `ai`, `auth`, `devops`, `comms`, `data`, `storage`, `productivity`. See [the schema](schema/collection.schema.json).
+2. Required fields: `ns`, `name`, `title`, `tagline`, `category`, `source`. Valid categories: `payments`, `ai`, `auth`, `devops`, `comms`, `data`, `storage`, `productivity`. See [the schema](schema/collection.schema.json).
 
 3. Open a PR. CI validates your entry. On merge, `index.json` is rebuilt automatically and your collection appears on the find page.
 
-> `verified` / `official` are reserved for review; `downloads` / `stars` are placeholder until install telemetry lands.
+> `verified` / `official` are editorial flags set during review. Usage stats (downloads, stars) are intentionally not stored until they can be measured for real.

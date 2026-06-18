@@ -26,7 +26,7 @@ const CATEGORIES = {
   productivity: { label: 'Productivity',     icon: 'layout' },
 };
 
-const REQUIRED = ['ns', 'name', 'title', 'tagline', 'category', 'version', 'source'];
+const REQUIRED = ['ns', 'name', 'title', 'tagline', 'category', 'source'];
 
 async function readAll() {
   const out = [];
@@ -70,9 +70,10 @@ function validate(entry, where) {
 }
 
 function buildIndex(all) {
-  const byDownloads = [...all].sort((a, b) => (b.downloads || 0) - (a.downloads || 0));
-  const featured = byDownloads.filter((c) => c.featured).slice(0, 3);
-  const trending = byDownloads.filter((c) => c.trending && !c.featured).slice(0, 6);
+  // No usage stats are stored, so order is deterministic by title.
+  const sorted = [...all].sort((a, b) => a.title.localeCompare(b.title));
+  const featured = sorted.filter((c) => c.featured).slice(0, 3);
+  const trending = sorted.filter((c) => c.trending && !c.featured).slice(0, 6);
 
   const counts = {};
   for (const c of all) counts[c.category] = (counts[c.category] || 0) + 1;
@@ -81,21 +82,16 @@ function buildIndex(all) {
     .filter((c) => c.count > 0);
 
   const publishers = new Set(all.map((c) => c.ns)).size;
-  const totalInstalls = all.reduce((s, c) => s + (c.downloads || 0), 0);
 
   return {
     featured,
     trending,
     categories,
-    all: byDownloads,
+    all: sorted,
     totalCollections: all.length,
     publishers,
-    monthlyInstalls: fmtInstalls(totalInstalls),
   };
 }
-
-const fmtInstalls = (n) =>
-  n >= 1_000_000 ? (n / 1_000_000).toFixed(1) + 'M' : n >= 1000 ? Math.round(n / 1000) + 'k' : String(n);
 
 async function main() {
   const all = await readAll();

@@ -8,12 +8,15 @@
   "official": true,
   "featured": false,
   "trending": true,
-  "downloads": 118203,
-  "stars": 1442,
-  "requests": 28,
-  "version": "2026.02",
-  "updated": "4d ago",
-  "langs": ["REST", "Streaming"],
+  "langs": [
+    "REST",
+    "Streaming"
+  ],
   "color": "#d97757",
-  "source": { "type": "git", "repo": "https://github.com/anthropics/anthropic-sdk-typescript", "subdir": ".", "ref": "main" }
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/anthropics/anthropic-sdk-typescript",
+    "subdir": ".",
+    "ref": "main"
+  }
 }
