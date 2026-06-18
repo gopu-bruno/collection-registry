@@ -105,9 +105,36 @@
       "label": "DevOps & Infra",
       "icon": "server",
       "count": 1
+    },
+    {
+      "id": "data",
+      "label": "Data & Analytics",
+      "icon": "chart",
+      "count": 1
     }
   ],
   "all": [
+    {
+      "ns": "algolia",
+      "name": "search-api",
+      "title": "Algolia Search API",
+      "tagline": "Indexing, search and recommend.",
+      "category": "data",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": false,
+      "langs": [
+        "REST"
+      ],
+      "color": "#5468ff",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "algolia-search-api",
+        "ref": "main"
+      }
+    },
     {
       "ns": "anthropic",
       "name": "claude-api",
@@ -193,6 +220,6 @@
       }
     }
   ],
-  "totalCollections": 4,
-  "publishers": 4
+  "totalCollections": 5,
+  "publishers": 5
 }
