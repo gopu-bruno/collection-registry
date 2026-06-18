@@ -1,0 +1,21 @@
+{
+  "ns": "discord",
+  "name": "rest-api",
+  "title": "Discord REST API",
+  "tagline": "Guilds, channels, messages and interactions.",
+  "category": "comms",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#5865f2",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "discord-rest-api",
+    "ref": "main"
+  }
+}
