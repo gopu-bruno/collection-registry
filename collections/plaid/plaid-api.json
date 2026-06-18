@@ -1,0 +1,21 @@
+{
+  "ns": "plaid",
+  "name": "plaid-api",
+  "title": "Plaid API",
+  "tagline": "Accounts, transactions, auth and identity.",
+  "category": "payments",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#000000",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "plaid-plaid-api",
+    "ref": "main"
+  }
+}
