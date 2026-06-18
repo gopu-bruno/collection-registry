@@ -1,0 +1,21 @@
+{
+  "ns": "paypal",
+  "name": "orders-api",
+  "title": "PayPal Orders API",
+  "tagline": "Create, authorize and capture orders.",
+  "category": "payments",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#003087",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "paypal-orders-api",
+    "ref": "main"
+  }
+}
