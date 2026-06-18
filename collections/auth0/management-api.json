@@ -1,0 +1,21 @@
+{
+  "ns": "auth0",
+  "name": "management-api",
+  "title": "Auth0 Management API",
+  "tagline": "Users, roles, connections and tenants.",
+  "category": "auth",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#eb5424",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "auth0-management-api",
+    "ref": "main"
+  }
+}
