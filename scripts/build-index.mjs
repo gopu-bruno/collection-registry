@@ -73,7 +73,7 @@ function buildIndex(all) {
   // No usage stats are stored, so order is deterministic by title.
   const sorted = [...all].sort((a, b) => a.title.localeCompare(b.title));
   const featured = sorted.filter((c) => c.featured).slice(0, 3);
-  const trending = sorted.filter((c) => c.trending && !c.featured).slice(0, 6);
+  const trending = sorted.filter((c) => c.trending && !c.featured);
 
   const counts = {};
   for (const c of all) counts[c.category] = (counts[c.category] || 0) + 1;
