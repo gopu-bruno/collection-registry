@@ -1,0 +1,27 @@
+{
+  "ns": "openai",
+  "name": "openai-api",
+  "title": "OpenAI API",
+  "tagline": "Chat, embeddings, audio, images — the complete OpenAI API surface.",
+  "category": "ai",
+  "verified": true,
+  "official": true,
+  "featured": true,
+  "trending": false,
+  "downloads": 228109,
+  "stars": 1984,
+  "requests": 64,
+  "version": "1.40.2",
+  "updated": "3d ago",
+  "langs": [
+    "REST",
+    "Streaming"
+  ],
+  "color": "#10a37f",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/openai/openai-openapi",
+    "subdir": ".",
+    "ref": "main"
+  }
+}

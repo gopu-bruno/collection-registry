@@ -1,0 +1,192 @@
+{
+  "featured": [
+    {
+      "ns": "stripe",
+      "name": "stripe-api",
+      "title": "Stripe API",
+      "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
+      "category": "payments",
+      "verified": true,
+      "official": true,
+      "featured": true,
+      "trending": false,
+      "downloads": 482310,
+      "stars": 3120,
+      "requests": 412,
+      "version": "2025.08.12",
+      "updated": "2d ago",
+      "langs": [
+        "REST",
+        "Webhooks"
+      ],
+      "color": "#635bff",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/stripe/openapi",
+        "subdir": ".",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "github",
+      "name": "rest-api",
+      "title": "GitHub REST API",
+      "tagline": "Full GitHub REST API v2022-11-28, 600+ requests with examples.",
+      "category": "devops",
+      "verified": true,
+      "official": true,
+      "featured": true,
+      "trending": false,
+      "downloads": 301842,
+      "stars": 2287,
+      "requests": 612,
+      "version": "2022.11.28",
+      "updated": "1w ago",
+      "langs": [
+        "REST",
+        "GraphQL"
+      ],
+      "color": "#24292e",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/github/rest-api-description",
+        "subdir": ".",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "openai",
+      "name": "openai-api",
+      "title": "OpenAI API",
+      "tagline": "Chat, embeddings, audio, images — the complete OpenAI API surface.",
+      "category": "ai",
+      "verified": true,
+      "official": true,
+      "featured": true,
+      "trending": false,
+      "downloads": 228109,
+      "stars": 1984,
+      "requests": 64,
+      "version": "1.40.2",
+      "updated": "3d ago",
+      "langs": [
+        "REST",
+        "Streaming"
+      ],
+      "color": "#10a37f",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/openai/openai-openapi",
+        "subdir": ".",
+        "ref": "main"
+      }
+    }
+  ],
+  "trending": [],
+  "categories": [
+    {
+      "id": "payments",
+      "label": "Payments",
+      "icon": "card",
+      "count": 1
+    },
+    {
+      "id": "ai",
+      "label": "AI & ML",
+      "icon": "sparkle",
+      "count": 1
+    },
+    {
+      "id": "devops",
+      "label": "DevOps & Infra",
+      "icon": "server",
+      "count": 1
+    }
+  ],
+  "all": [
+    {
+      "ns": "stripe",
+      "name": "stripe-api",
+      "title": "Stripe API",
+      "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
+      "category": "payments",
+      "verified": true,
+      "official": true,
+      "featured": true,
+      "trending": false,
+      "downloads": 482310,
+      "stars": 3120,
+      "requests": 412,
+      "version": "2025.08.12",
+      "updated": "2d ago",
+      "langs": [
+        "REST",
+        "Webhooks"
+      ],
+      "color": "#635bff",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/stripe/openapi",
+        "subdir": ".",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "github",
+      "name": "rest-api",
+      "title": "GitHub REST API",
+      "tagline": "Full GitHub REST API v2022-11-28, 600+ requests with examples.",
+      "category": "devops",
+      "verified": true,
+      "official": true,
+      "featured": true,
+      "trending": false,
+      "downloads": 301842,
+      "stars": 2287,
+      "requests": 612,
+      "version": "2022.11.28",
+      "updated": "1w ago",
+      "langs": [
+        "REST",
+        "GraphQL"
+      ],
+      "color": "#24292e",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/github/rest-api-description",
+        "subdir": ".",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "openai",
+      "name": "openai-api",
+      "title": "OpenAI API",
+      "tagline": "Chat, embeddings, audio, images — the complete OpenAI API surface.",
+      "category": "ai",
+      "verified": true,
+      "official": true,
+      "featured": true,
+      "trending": false,
+      "downloads": 228109,
+      "stars": 1984,
+      "requests": 64,
+      "version": "1.40.2",
+      "updated": "3d ago",
+      "langs": [
+        "REST",
+        "Streaming"
+      ],
+      "color": "#10a37f",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/openai/openai-openapi",
+        "subdir": ".",
+        "ref": "main"
+      }
+    }
+  ],
+  "totalCollections": 3,
+  "publishers": 3,
+  "monthlyInstalls": "1.0M"
+}

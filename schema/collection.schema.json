@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Registry collection entry",
+  "description": "One file per collection under collections/<ns>/<name>.json. A pointer to a git-hosted Bruno/OpenCollection, plus display metadata.",
+  "type": "object",
+  "required": ["ns", "name", "title", "tagline", "category", "version", "source"],
+  "additionalProperties": true,
+  "properties": {
+    "ns": { "type": "string", "description": "Namespace / publisher (owner).", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "description": "Collection name.", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string" },
+    "tagline": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["payments", "ai", "auth", "devops", "comms", "data", "storage", "productivity"]
+    },
+    "verified": { "type": "boolean" },
+    "official": { "type": "boolean" },
+    "featured": { "type": "boolean" },
+    "trending": { "type": "boolean" },
+    "downloads": { "type": "integer", "minimum": 0 },
+    "stars": { "type": "integer", "minimum": 0 },
+    "requests": { "type": "integer", "minimum": 0 },
+    "version": { "type": "string" },
+    "updated": { "type": "string" },
+    "langs": { "type": "array", "items": { "type": "string" } },
+    "color": { "type": "string" },
+    "source": {
+      "type": "object",
+      "required": ["type", "repo"],
+      "properties": {
+        "type": { "const": "git" },
+        "repo": { "type": "string", "format": "uri" },
+        "subdir": { "type": "string" },
+        "ref": { "type": "string" }
+      }
+    }
+  }
+}

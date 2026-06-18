@@ -1,0 +1,27 @@
+{
+  "ns": "github",
+  "name": "rest-api",
+  "title": "GitHub REST API",
+  "tagline": "Full GitHub REST API v2022-11-28, 600+ requests with examples.",
+  "category": "devops",
+  "verified": true,
+  "official": true,
+  "featured": true,
+  "trending": false,
+  "downloads": 301842,
+  "stars": 2287,
+  "requests": 612,
+  "version": "2022.11.28",
+  "updated": "1w ago",
+  "langs": [
+    "REST",
+    "GraphQL"
+  ],
+  "color": "#24292e",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/github/rest-api-description",
+    "subdir": ".",
+    "ref": "main"
+  }
+}

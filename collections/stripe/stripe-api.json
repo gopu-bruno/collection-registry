@@ -1,0 +1,27 @@
+{
+  "ns": "stripe",
+  "name": "stripe-api",
+  "title": "Stripe API",
+  "tagline": "Official Stripe REST API collection — payments, customers, webhooks.",
+  "category": "payments",
+  "verified": true,
+  "official": true,
+  "featured": true,
+  "trending": false,
+  "downloads": 482310,
+  "stars": 3120,
+  "requests": 412,
+  "version": "2025.08.12",
+  "updated": "2d ago",
+  "langs": [
+    "REST",
+    "Webhooks"
+  ],
+  "color": "#635bff",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/stripe/openapi",
+    "subdir": ".",
+    "ref": "main"
+  }
+}
