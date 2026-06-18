@@ -1,0 +1,21 @@
+{
+  "ns": "linear",
+  "name": "linear-graphql",
+  "title": "Linear GraphQL",
+  "tagline": "Linear's GraphQL API as Bruno requests.",
+  "category": "productivity",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "GraphQL"
+  ],
+  "color": "#5e6ad2",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "linear-linear-graphql",
+    "ref": "main"
+  }
+}
