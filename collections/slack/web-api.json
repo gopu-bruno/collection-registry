@@ -1,0 +1,21 @@
+{
+  "ns": "slack",
+  "name": "web-api",
+  "title": "Slack Web API",
+  "tagline": "Messages, channels, users and files.",
+  "category": "comms",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#4a154b",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "slack-web-api",
+    "ref": "main"
+  }
+}
