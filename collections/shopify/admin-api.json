@@ -1,0 +1,21 @@
+{
+  "ns": "shopify",
+  "name": "admin-api",
+  "title": "Shopify Admin API",
+  "tagline": "Products, orders, customers and inventory.",
+  "category": "payments",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#95bf47",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "shopify-admin-api",
+    "ref": "main"
+  }
+}
