@@ -1,0 +1,21 @@
+{
+  "ns": "algolia",
+  "name": "search-api",
+  "title": "Algolia Search API",
+  "tagline": "Indexing, search and recommend.",
+  "category": "data",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": false,
+  "langs": [
+    "REST"
+  ],
+  "color": "#5468ff",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "algolia-search-api",
+    "ref": "main"
+  }
+}
