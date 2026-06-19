@@ -108,6 +108,27 @@
       }
     },
     {
+      "ns": "datadog",
+      "name": "api",
+      "title": "Datadog API",
+      "tagline": "Metrics, monitors, logs and dashboards.",
+      "category": "devops",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": true,
+      "langs": [
+        "REST"
+      ],
+      "color": "#632ca6",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "datadog-api",
+        "ref": "main"
+      }
+    },
+    {
       "ns": "hubspot",
       "name": "crm-api",
       "title": "HubSpot CRM API",
@@ -146,7 +167,7 @@
       "id": "devops",
       "label": "DevOps & Infra",
       "icon": "server",
-      "count": 1
+      "count": 2
     },
     {
       "id": "data",
@@ -201,6 +222,27 @@
         "type": "git",
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "anthropic-claude-api",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "datadog",
+      "name": "api",
+      "title": "Datadog API",
+      "tagline": "Metrics, monitors, logs and dashboards.",
+      "category": "devops",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": true,
+      "langs": [
+        "REST"
+      ],
+      "color": "#632ca6",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "datadog-api",
         "ref": "main"
       }
     },
@@ -289,6 +331,6 @@
       }
     }
   ],
-  "totalCollections": 6,
-  "publishers": 6
+  "totalCollections": 7,
+  "publishers": 7
 }
