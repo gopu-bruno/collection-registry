@@ -108,6 +108,27 @@
       }
     },
     {
+      "ns": "cloudinary",
+      "name": "upload-api",
+      "title": "Cloudinary Upload",
+      "tagline": "Upload, transform and deliver media.",
+      "category": "storage",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": true,
+      "langs": [
+        "REST"
+      ],
+      "color": "#3448c5",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "cloudinary-upload-api",
+        "ref": "main"
+      }
+    },
+    {
       "ns": "datadog",
       "name": "api",
       "title": "Datadog API",
@@ -176,6 +197,12 @@
       "count": 1
     },
     {
+      "id": "storage",
+      "label": "Storage & CDN",
+      "icon": "box",
+      "count": 1
+    },
+    {
       "id": "productivity",
       "label": "Productivity",
       "icon": "layout",
@@ -222,6 +249,27 @@
         "type": "git",
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "anthropic-claude-api",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "cloudinary",
+      "name": "upload-api",
+      "title": "Cloudinary Upload",
+      "tagline": "Upload, transform and deliver media.",
+      "category": "storage",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": true,
+      "langs": [
+        "REST"
+      ],
+      "color": "#3448c5",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "cloudinary-upload-api",
         "ref": "main"
       }
     },
@@ -331,6 +379,6 @@
       }
     }
   ],
-  "totalCollections": 7,
-  "publishers": 7
+  "totalCollections": 8,
+  "publishers": 8
 }
