@@ -8,7 +8,7 @@ There is **no server**. The registry *is* this repository:
 - [`index.json`](index.json) is generated from those files by CI and is what the website and the Bruno app fetch.
 - Publishing a collection = opening a **pull request** that adds a file under `collections/`. On merge, CI rebuilds `index.json` and it appears on the find page.
 
-This is the same model as Homebrew taps and the Krew index: a git repo of metadata pointing at where the real content lives.
+This is the same model as Homebrew taps and the Krew index: a git repo of metadata pointing at where the real content lives. See [ARCHITECTURE.md](ARCHITECTURE.md) for the full mental model and design rationale.
 
 ## Local development
 
