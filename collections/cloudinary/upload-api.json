@@ -1,0 +1,21 @@
+{
+  "ns": "cloudinary",
+  "name": "upload-api",
+  "title": "Cloudinary Upload",
+  "tagline": "Upload, transform and deliver media.",
+  "category": "storage",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#3448c5",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "cloudinary-upload-api",
+    "ref": "main"
+  }
+}
