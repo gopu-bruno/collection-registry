@@ -8,6 +8,15 @@ on:
   pull_request:
     paths:
       - 'collections/**'
+  # Re-bake usage stats (release versions + asset download counts) on a cadence.
+  # Those numbers live on GitHub and drift without any change to collections/,
+  # so a merge-only trigger would leave the index's counts stale. Hourly keeps
+  # the browse-card counts reasonably fresh. Adjust the cron as needed.
+  # DISABLED for now — re-enable to auto-refresh counts on a schedule.
+  # schedule:
+  #   - cron: '0 * * * *'
+  # Manual trigger — handy for demos / forcing an immediate refresh.
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -24,17 +33,22 @@ jobs:
           node-version: '20'
       - run: node scripts/build-index.mjs --check
 
-  # On merge to main: rebuild index.json from collections/ and commit it back.
-  # The website fetches this file, so the new collection appears on the find page.
+  # On merge to main (new/changed collection), on a schedule (refresh release
+  # stats), or manually: rebuild index.json and commit it back if it changed.
+  # The website fetches this file, so updates appear on the find page.
   rebuild:
-    if: github.event_name == 'push'
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      # GITHUB_TOKEN raises the GitHub API rate limit (5000/hr vs 60) so the
+      # release-stats fetch in build-index.mjs doesn't get throttled.
       - run: node scripts/build-index.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Commit regenerated index.json
         run: |
           git config user.name "registry-bot"

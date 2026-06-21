@@ -27,7 +27,14 @@
         "type": { "const": "git" },
         "repo": { "type": "string", "format": "uri" },
         "subdir": { "type": "string" },
-        "ref": { "type": "string" }
+        "ref": {
+          "type": "string",
+          "description": "Fallback git ref to install when no release/version is selected (default branch, e.g. \"main\"). Versioned installs resolve to a release TAG, not this; ref is the unversioned/track-the-branch target for collections that don't cut releases."
+        },
+        "tagPrefix": {
+          "type": "string",
+          "description": "Identifies this collection's release tags when several collections share one repo (e.g. \"stripe-stripe-api@\"). Defaults to \"<subdir>@\" when a subdir is set, else whole-repo. The version shown is the tag with this prefix stripped."
+        }
       }
     }
   }

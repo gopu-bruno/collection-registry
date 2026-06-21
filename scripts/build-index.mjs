@@ -9,10 +9,15 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { parseRepo, fetchRepoReleases, statsFromReleases } from './github.mjs';
 
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const COLLECTIONS_DIR = join(ROOT, 'collections');
 const CHECK = process.argv.includes('--check');
+// Usage stats come from the GitHub Releases API. Skip the network with
+// --no-stats (or when validating); CI passes a token via GITHUB_TOKEN.
+const NO_STATS = process.argv.includes('--no-stats');
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 
 // Category catalog: id -> display label + icon name (icons live in the website).
 const CATEGORIES = {
@@ -69,8 +74,39 @@ function validate(entry, where) {
   }
 }
 
+// Enrich entries in place with real usage stats from GitHub Releases.
+// Releases are fetched once per repo (collections often share a monorepo) and
+// attributed to each collection by tag prefix. Network failures are non-fatal:
+// the index still builds, just without stats for the affected repo.
+async function enrichWithReleaseStats(all) {
+  const byRepo = new Map(); // repoUrl -> [entries]
+  for (const c of all) {
+    const url = c.source && c.source.repo;
+    if (!url) continue;
+    if (!byRepo.has(url)) byRepo.set(url, []);
+    byRepo.get(url).push(c);
+  }
+
+  let ok = 0;
+  for (const [url, entries] of byRepo) {
+    const parsed = parseRepo(url);
+    if (!parsed) {
+      console.warn(`  ! skipping stats — unrecognized repo url: ${url}`);
+      continue;
+    }
+    try {
+      const releases = await fetchRepoReleases(parsed.owner, parsed.repo, { token: GITHUB_TOKEN });
+      for (const entry of entries) Object.assign(entry, statsFromReleases(releases, entry));
+      ok += entries.length;
+    } catch (e) {
+      console.warn(`  ! stats failed for ${parsed.owner}/${parsed.repo}: ${e.message}`);
+    }
+  }
+  console.log(`  fetched release stats for ${ok}/${all.length} collection(s)${GITHUB_TOKEN ? ' (authenticated)' : ' (unauthenticated — 60 req/hr)'}.`);
+}
+
 function buildIndex(all) {
-  // No usage stats are stored, so order is deterministic by title.
+  // Order is deterministic by title (usage stats don't affect ordering).
   const sorted = [...all].sort((a, b) => a.title.localeCompare(b.title));
   const featured = sorted.filter((c) => c.featured).slice(0, 3);
   const trending = sorted.filter((c) => c.trending && !c.featured);
@@ -101,6 +137,8 @@ async function main() {
     console.log(`✓ ${all.length} collection(s) valid.`);
     return;
   }
+
+  if (!NO_STATS) await enrichWithReleaseStats(all);
 
   const index = buildIndex(all);
   await writeFile(join(ROOT, 'index.json'), JSON.stringify(index, null, 2) + '\n');

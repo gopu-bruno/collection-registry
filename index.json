@@ -19,7 +19,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "github-rest-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "openai",
@@ -40,7 +45,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "openai-openai-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "stripe",
@@ -61,7 +71,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "stripe-stripe-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     }
   ],
   "trending": [
@@ -84,7 +99,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "algolia-search-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "anthropic",
@@ -105,7 +125,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "anthropic-claude-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "hubspot",
@@ -126,7 +151,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "hubspot-crm-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     }
   ],
   "categories": [
@@ -181,7 +211,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "algolia-search-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "anthropic",
@@ -202,7 +237,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "anthropic-claude-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "github",
@@ -223,7 +263,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "github-rest-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "hubspot",
@@ -244,7 +289,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "hubspot-crm-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "openai",
@@ -265,7 +315,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "openai-openai-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     },
     {
       "ns": "stripe",
@@ -286,7 +341,12 @@
         "repo": "https://github.com/gopu-bruno/bruno-collections",
         "subdir": "stripe-stripe-api",
         "ref": "main"
-      }
+      },
+      "version": null,
+      "downloads": 0,
+      "releaseCount": 0,
+      "latestAssetUrl": null,
+      "releases": []
     }
   ],
   "totalCollections": 6,
