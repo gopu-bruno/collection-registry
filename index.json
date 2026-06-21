@@ -133,6 +133,48 @@
       "releases": []
     },
     {
+      "ns": "cloudinary",
+      "name": "upload-api",
+      "title": "Cloudinary Upload",
+      "tagline": "Upload, transform and deliver media.",
+      "category": "storage",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": true,
+      "langs": [
+        "REST"
+      ],
+      "color": "#3448c5",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "cloudinary-upload-api",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "datadog",
+      "name": "api",
+      "title": "Datadog API",
+      "tagline": "Metrics, monitors, logs and dashboards.",
+      "category": "devops",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": true,
+      "langs": [
+        "REST"
+      ],
+      "color": "#632ca6",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "datadog-api",
+        "ref": "main"
+      }
+    },
+    {
       "ns": "hubspot",
       "name": "crm-api",
       "title": "HubSpot CRM API",
@@ -176,12 +218,18 @@
       "id": "devops",
       "label": "DevOps & Infra",
       "icon": "server",
-      "count": 1
+      "count": 2
     },
     {
       "id": "data",
       "label": "Data & Analytics",
       "icon": "chart",
+      "count": 1
+    },
+    {
+      "id": "storage",
+      "label": "Storage & CDN",
+      "icon": "box",
       "count": 1
     },
     {
@@ -243,6 +291,48 @@
       "releaseCount": 0,
       "latestAssetUrl": null,
       "releases": []
+    },
+    {
+      "ns": "cloudinary",
+      "name": "upload-api",
+      "title": "Cloudinary Upload",
+      "tagline": "Upload, transform and deliver media.",
+      "category": "storage",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": true,
+      "langs": [
+        "REST"
+      ],
+      "color": "#3448c5",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "cloudinary-upload-api",
+        "ref": "main"
+      }
+    },
+    {
+      "ns": "datadog",
+      "name": "api",
+      "title": "Datadog API",
+      "tagline": "Metrics, monitors, logs and dashboards.",
+      "category": "devops",
+      "verified": false,
+      "official": false,
+      "featured": false,
+      "trending": true,
+      "langs": [
+        "REST"
+      ],
+      "color": "#632ca6",
+      "source": {
+        "type": "git",
+        "repo": "https://github.com/gopu-bruno/bruno-collections",
+        "subdir": "datadog-api",
+        "ref": "main"
+      }
     },
     {
       "ns": "github",
@@ -349,6 +439,6 @@
       "releases": []
     }
   ],
-  "totalCollections": 6,
-  "publishers": 6
+  "totalCollections": 8,
+  "publishers": 8
 }
