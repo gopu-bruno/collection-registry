@@ -1,0 +1,16 @@
+{
+  "ns": "gopu-bruno",
+  "name": "petstore-api",
+  "title": "Petstore API",
+  "tagline": "Pets, store orders, and users — the Swagger Petstore API.",
+  "category": "payments",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": false,
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/petstore-api",
+    "ref": "main"
+  }
+}
