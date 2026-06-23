@@ -10,11 +10,12 @@ on:
       - 'collections/**'
   # Re-bake usage stats (release versions + asset download counts) on a cadence.
   # Those numbers live on GitHub and drift without any change to collections/,
-  # so a merge-only trigger would leave the index's counts stale. Hourly keeps
-  # the browse-card counts reasonably fresh. Adjust the cron as needed.
+  # so a merge-only trigger would leave the index's counts stale. Once or twice a
+  # day keeps them fresh enough; each run costs ~1 GitHub API call per collection
+  # repo, well under the token's hourly limit at this scale. Adjust the cron as needed.
   # DISABLED for now — re-enable to auto-refresh counts on a schedule.
   # schedule:
-  #   - cron: '0 * * * *'
+  #   - cron: '0 6,18 * * *'   # twice daily (06:00 & 18:00 UTC)
   # Manual trigger — handy for demos / forcing an immediate refresh.
   workflow_dispatch:
 

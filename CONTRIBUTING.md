@@ -2,6 +2,11 @@
 
 Publishing to the registry is a pull request. No account, no server — GitHub is the auth and review layer.
 
+> This page covers **listing** a collection (the one-time PR). For the full
+> picture — listing **and** cutting versioned releases, from the Bruno app or the
+> CLI (including fork-and-PR if you lack write access here) — see
+> [PUBLISHING.md](PUBLISHING.md).
+
 1. Add a file at `collections/<ns>/<name>.json` where `<ns>` is your publisher/owner name and `<name>` is the collection. Example:
 
 ```json

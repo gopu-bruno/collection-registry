@@ -5,8 +5,10 @@ A **git-native index** of [Bruno](https://usebruno.com) / OpenCollection API col
 There is **no server**. The registry *is* this repository:
 
 - Each collection is one file: [`collections/<ns>/<name>.json`](collections/) — a pointer to a git-hosted collection plus display metadata.
-- [`index.json`](index.json) is generated from those files by CI and is what the website and the Bruno app fetch.
-- Publishing a collection = opening a **pull request** that adds a file under `collections/`. On merge, CI rebuilds `index.json` and it appears on the find page.
+- [`index.json`](index.json) is generated from those files by CI and is what the website and the Bruno app fetch. The build also **bakes in each collection's latest version + install counts**, read from the source repo's GitHub Releases.
+- **Listing** a collection = a one-time **pull request** adding a file under `collections/`. **Versions** are git tags + releases on the *author's own* repo — publishing a new version needs no PR; the index re-bakes the new version and counts.
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for the model and [PUBLISHING.md](PUBLISHING.md) for the publish/version flow (app + CLI).
 
 ## Local development
 
