@@ -1,0 +1,12 @@
+{
+  "ns": "gopu-bruno",
+  "name": "petstore-api",
+  "title": "Petstore API",
+  "tagline": "payment api",
+  "category": "payments",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/petstore-api",
+    "ref": "main"
+  }
+}
