@@ -1,0 +1,21 @@
+{
+  "ns": "mongodb",
+  "name": "atlas-data-api",
+  "title": "MongoDB Atlas Data",
+  "tagline": "CRUD and aggregation over Atlas.",
+  "category": "data",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#00ed64",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "mongodb-atlas-data-api",
+    "ref": "main"
+  }
+}
