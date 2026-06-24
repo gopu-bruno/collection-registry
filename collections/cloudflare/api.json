@@ -1,0 +1,21 @@
+{
+  "ns": "cloudflare",
+  "name": "api",
+  "title": "Cloudflare API",
+  "tagline": "DNS, Workers, R2 and Zero Trust.",
+  "category": "devops",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#f38020",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "cloudflare-api",
+    "ref": "main"
+  }
+}
