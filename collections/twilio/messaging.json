@@ -1,0 +1,21 @@
+{
+  "ns": "twilio",
+  "name": "messaging",
+  "title": "Twilio Messaging",
+  "tagline": "SMS, MMS and WhatsApp messaging.",
+  "category": "comms",
+  "verified": false,
+  "official": false,
+  "featured": false,
+  "trending": true,
+  "langs": [
+    "REST"
+  ],
+  "color": "#f22f46",
+  "source": {
+    "type": "git",
+    "repo": "https://github.com/gopu-bruno/bruno-collections",
+    "subdir": "twilio-messaging",
+    "ref": "main"
+  }
+}
